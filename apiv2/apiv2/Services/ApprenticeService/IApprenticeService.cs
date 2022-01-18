@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using apiv2.DTOs.ApprenticeDTO;
 using apiv2.Models;
 
@@ -12,6 +13,7 @@ namespace apiv2.Services.ApprenticeService
         //GetBy
         Apprentice GetById(Guid id);
         Apprentice GetByEmail(string email);
+        IEnumerable<Apprentice> GetAllApprentices();
 
         // Create - Delete - Update
         void Create(Apprentice apprentice);

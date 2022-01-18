@@ -28,6 +28,8 @@
     <None Remove="Microsoft.AspNetCore.Mvc.Core" />
     <None Remove="Models\AssociativeTables\" />
     <None Remove="Services\DepartmentService\" />
+    <None Remove="Services\MasterclassService\" />
+    <None Remove="Repositories\MasterclassRepository\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
@@ -58,5 +60,7 @@
     <Folder Include="Utilities\Attributes\" />
     <Folder Include="Models\AssociativeTables\" />
     <Folder Include="Services\DepartmentService\" />
+    <Folder Include="Services\MasterclassService\" />
+    <Folder Include="Repositories\MasterclassRepository\" />
   </ItemGroup>
 </Project>

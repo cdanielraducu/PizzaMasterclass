@@ -3,6 +3,7 @@ using System.Linq;
 using apiv2.Data;
 using apiv2.Models;
 using apiv2.Repositories.GenericRepository;
+using Microsoft.EntityFrameworkCore;
 
 namespace apiv2.Repositories.DepartmentRepository
 {
@@ -14,7 +15,7 @@ namespace apiv2.Repositories.DepartmentRepository
 
         public Department FindByLevel(string level)
         {
-            return _table.FirstOrDefault(x => x.Level == level);
+            return (Department)_table.Include(level);
         }
     }
 }

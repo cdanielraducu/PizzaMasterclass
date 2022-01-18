@@ -4,6 +4,7 @@ using apiv2.Models;
 using apiv2.Services.ApprenticeService;
 using apiv2.UOF;
 using apiv2.Utilities.Attributes;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using BCryptNet = BCrypt.Net.BCrypt;
@@ -88,7 +89,7 @@ namespace apiv2.Controllers
                 Name = apprentice.Name,
                 Email = apprentice.Email,
                 Level = "Master",
-                Role = Role.Admin,
+                Role = Role.Apprentice,
                 Password = BCryptNet.HashPassword(apprentice.Password),
             };
 
@@ -96,16 +97,76 @@ namespace apiv2.Controllers
             return Ok(new { Message = "Apprentice created with success." });
         }
 
-        [Authorization(Role.Admin)]
         [HttpGet("get_all")]
-        public IActionResult GetAllUsers()
+        [AllowAnonymous]
+        public IActionResult GetAll()
         {
-            var users = _apprenticeService.GetByEmail("dani@tmail.com");
-            if (users == null)
+            var apprentices = _apprenticeService.GetAllApprentices();
+
+            if(apprentices == null)
             {
-                return BadRequest(new { Message = "No users found." });
+                return Ok("No apprentices...");
             }
-            return Ok(users);
+            return Ok(apprentices);
+        }
+
+        [HttpGet("get_by_email")]
+        [AllowAnonymous]
+        public IActionResult GetByEmail(string email)
+        {
+            if(email == null)
+            {
+                return BadRequest(new { Message = "Email field should not be empty." });
+            }
+
+            var apprentice = _apprenticeService.GetByEmail(email);
+            if(apprentice == null)
+            {
+                return Ok("Apprentice by this email not found");
+            }
+            return Ok(apprentice);
+        }
+
+        [HttpDelete("delete")]
+        [AllowAnonymous]
+        public IActionResult Delete(string email)
+        {
+            var apprenticeToDelete = _apprenticeService.GetByEmail(email);
+            if(apprenticeToDelete == null)
+            {
+                return BadRequest(new { Message = "Apprentice by this email not found" });
+            }
+            _apprenticeService.Delete(apprenticeToDelete);
+            return Ok("Apprentice deleted");
+        }
+
+        [HttpPut("update")]
+        [AllowAnonymous]
+        public IActionResult Update(ApprenticeRequestDTO apprentice)
+        {
+            var apprenticeToUpdate = _apprenticeService.GetByEmail(apprentice.Email);
+            if (apprenticeToUpdate == null)
+            {
+                return BadRequest(new { Message = "Apprentice by this email not found" });
+            }
+
+            apprenticeToUpdate.Name = apprentice.Name ?? apprenticeToUpdate.Name; ;
+            apprenticeToUpdate.Password = apprentice.Password == null ? apprenticeToUpdate.Password : BCryptNet.HashPassword(apprentice.Password);
+
+            _apprenticeService.Update(apprenticeToUpdate);
+            return Ok("Apprentice Updated");
+        }
+
+        [Authorization(Role.Admin)]
+        [HttpGet("get_all_apprentices")]
+        public IActionResult GetAllApprentices()
+        {
+            var apprentices = _apprenticeService.GetAllApprentices();
+            if (apprentices == null)
+            {
+                return BadRequest(new { Message = "No apprentices found." });
+            }
+            return Ok(apprentices);
         }
     }
 }

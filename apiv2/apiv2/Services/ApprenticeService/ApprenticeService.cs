@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using apiv2.DTOs.ApprenticeDTO;
 using apiv2.Models;
 using apiv2.Repositories.ApprenticeRepository;
@@ -55,6 +56,17 @@ namespace apiv2.Services.ApprenticeService
             }
             return apprentice;
         }
+
+        public IEnumerable<Apprentice> GetAllApprentices()
+        {
+            var allDepartments = _apprenticeRepository.GetAll();
+            if (allDepartments == null)
+            {
+                return null;
+            }
+            return allDepartments;
+        }
+
 
         public void Create(Apprentice apprentice)
         {

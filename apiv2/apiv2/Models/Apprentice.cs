@@ -16,6 +16,5 @@ namespace apiv2.Models
         public string Password { get; set; }
 
         public Role Role { get; set; }
-
     }
 }

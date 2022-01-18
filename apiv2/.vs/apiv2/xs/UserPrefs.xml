@@ -1,34 +1,40 @@
 ﻿<Properties StartupConfiguration="{D4CFAB57-A980-44AF-9D16-040C2F0BD52F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="apiv2/Services/DepartmentService/DepartmentService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="apiv2/Repositories/MasterclassRepository/MasterclassRepository.cs">
     <Files>
-      <File FileName="apiv2/Controllers/ApprenticeDeveloper.cs" Line="12" Column="2" IsPinned="True" />
-      <File FileName="apiv2/Repositories/GenericRepository/GenericRepository.cs" />
+      <File FileName="apiv2/Repositories/GenericRepository/GenericRepository.cs" Line="1" Column="1" />
       <File FileName="apiv2/Repositories/GenericRepository/IGenericRepository.cs" />
       <File FileName="apiv2/Services/ApprenticeService/ApprenticeService.cs" />
       <File FileName="apiv2/Services/ApprenticeService/IApprenticeService.cs" />
       <File FileName="apiv2/appsettings.json" />
       <File FileName="apiv2/Utilities/AppSettings.cs" />
-      <File FileName="apiv2/Utilities/JWTUtils/JWTUtils.cs" />
+      <File FileName="apiv2/Utilities/JWTUtils/JWTUtils.cs" Line="19" Column="1" />
       <File FileName="apiv2/UOF/UnitOfWork.cs" />
-      <File FileName="apiv2/Repositories/DepartmentRepository/DepartmentRepository.cs" Line="1" Column="1" />
-      <File FileName="apiv2/Repositories/DepartmentRepository/IDepartmentRepository.cs" />
-      <File FileName="apiv2/Repositories/ApprenticeRepository/ApprenticeRepository.cs" />
-      <File FileName="apiv2/Models/Apprentice.cs" />
+      <File FileName="apiv2/Repositories/DepartmentRepository/DepartmentRepository.cs" Line="20" Column="6" />
+      <File FileName="apiv2/Repositories/DepartmentRepository/IDepartmentRepository.cs" Line="10" Column="6" />
+      <File FileName="apiv2/Repositories/ApprenticeRepository/ApprenticeRepository.cs" Line="29" Column="1" />
+      <File FileName="apiv2/Models/Apprentice.cs" Line="18" Column="9" />
       <File FileName="apiv2/Models/Department.cs" Line="9" Column="9" />
       <File FileName="apiv2/DTOs/ApprenticeDTO/ApprenticeResponseDTO.cs" />
       <File FileName="apiv2/DTOs/ApprenticeDTO/ApprenticeRequestDTO.cs" />
       <File FileName="apiv2/Data/ProjectContext.cs" />
-      <File FileName="apiv2/Utilities/JWTMiddleware.cs" />
+      <File FileName="apiv2/Utilities/JWTMiddleware.cs" Line="33" Column="1" />
       <File FileName="apiv2/Program.cs" />
-      <File FileName="apiv2/Controllers/HomeController.cs" />
+      <File FileName="apiv2/Controllers/HomeController.cs" Line="1" Column="1" />
       <File FileName="apiv2/Migrations/20220117203001_initial.Designer.cs" />
       <File FileName="apiv2/Migrations/20220117203001_initial.cs" />
-      <File FileName="apiv2/Utilities/Attributes/Authorization.cs" Line="35" Column="14" />
+      <File FileName="apiv2/Utilities/Attributes/Authorization.cs" Line="46" Column="2" />
       <File FileName="apiv2/Models/Masterclass.cs" Line="12" Column="9" />
-      <File FileName="apiv2/Models/AssociativeTables/MasterclassApprentice.cs" Line="10" Column="9" />
-      <File FileName="apiv2/Controllers/DepartmentController.cs" Line="13" Column="1" />
-      <File FileName="apiv2/Services/DepartmentService/IDepartmentService.cs" Line="1" Column="1" />
-      <File FileName="apiv2/Services/DepartmentService/DepartmentService.cs" Line="1" Column="1" />
+      <File FileName="apiv2/Models/AssociativeTables/MasterclassApprentice.cs" Line="12" Column="2" />
+      <File FileName="apiv2/Controllers/DepartmentController.cs" Line="18" Column="27" />
+      <File FileName="apiv2/Services/DepartmentService/IDepartmentService.cs" Line="9" Column="8" />
+      <File FileName="apiv2/Services/DepartmentService/DepartmentService.cs" Line="55" Column="6" />
+      <File FileName="apiv2/Repositories/ApprenticeRepository/IApprenticeRepository.cs" />
+      <File FileName="apiv2/Controllers/ApprenticeController.cs" Line="160" Column="36" />
+      <File FileName="apiv2/Controllers/MasterclassController.cs" Line="4" Column="55" />
+      <File FileName="apiv2/Services/MasterclassService/IMasterclassService.cs" Line="15" Column="1" />
+      <File FileName="apiv2/Services/MasterclassService/MasterclassService.cs" Line="8" Column="30" />
+      <File FileName="apiv2/Repositories/MasterclassRepository/IMasterclassRepository.cs" Line="9" Column="9" />
+      <File FileName="apiv2/Repositories/MasterclassRepository/MasterclassRepository.cs" Line="8" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -47,24 +53,23 @@
                 <Node name="AssociativeTables" expanded="True" />
               </Node>
               <Node name="Repositories" expanded="True">
-                <Node name="ApprenticeRepository" expanded="True" />
                 <Node name="DepartmentRepository" expanded="True" />
+                <Node name="MasterclassRepository" expanded="True">
+                  <Node name="MasterclassRepository.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="Services" expanded="True">
-                <Node name="DepartmentService" expanded="True">
-                  <Node name="DepartmentService.cs" selected="True" />
-                </Node>
+                <Node name="DepartmentService" expanded="True" />
+                <Node name="MasterclassService" expanded="True" />
               </Node>
               <Node name="UOF" expanded="True" />
               <Node name="Utilities" expanded="True">
                 <Node name="Attributes" expanded="True" />
+                <Node name="JWTUtils" expanded="True" />
               </Node>
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -74,7 +79,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/daniraducu/Documents/Development/PizzaMasterclass/apiv2/apiv2/Utilities/Attributes/Authorization.cs" relfile="apiv2/Utilities/Attributes/Authorization.cs" line="37" column="1" />
-      <Breakpoint file="/Users/daniraducu/Documents/Development/PizzaMasterclass/apiv2/apiv2/Utilities/JWTMiddleware.cs" relfile="apiv2/Utilities/JWTMiddleware.cs" line="21" column="1" />
+      <Breakpoint file="/Users/daniraducu/Documents/Development/PizzaMasterclass/apiv2/apiv2/Controllers/ApprenticeController.cs" relfile="apiv2/Controllers/ApprenticeController.cs" line="134" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
