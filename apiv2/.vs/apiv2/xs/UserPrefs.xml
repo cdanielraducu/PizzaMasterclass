@@ -1,0 +1,73 @@
+﻿<Properties StartupConfiguration="{D4CFAB57-A980-44AF-9D16-040C2F0BD52F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="apiv2/Utilities/Attributes/Authorization.cs">
+    <Files>
+      <File FileName="apiv2/Controllers/ApprenticeDeveloper.cs" Line="101" Column="25" IsPinned="True" />
+      <File FileName="apiv2/Repositories/GenericRepository/GenericRepository.cs" Line="1" Column="1" />
+      <File FileName="apiv2/Repositories/GenericRepository/IGenericRepository.cs" Line="1" Column="1" />
+      <File FileName="apiv2/Services/ApprenticeService/ApprenticeService.cs" Line="33" Column="1" />
+      <File FileName="apiv2/Services/ApprenticeService/IApprenticeService.cs" Line="10" Column="31" />
+      <File FileName="apiv2/appsettings.json" Line="6" Column="63" />
+      <File FileName="apiv2/Utilities/AppSettings.cs" Line="6" Column="32" />
+      <File FileName="apiv2/Utilities/JWTUtils/JWTUtils.cs" Line="19" Column="1" />
+      <File FileName="apiv2/UOF/UnitOfWork.cs" Line="11" Column="1" />
+      <File FileName="apiv2/Repositories/DepartmentRepository/DepartmentRepository.cs" Line="1" Column="1" />
+      <File FileName="apiv2/Repositories/DepartmentRepository/IDepartmentRepository.cs" Line="1" Column="1" />
+      <File FileName="apiv2/Repositories/ApprenticeRepository/ApprenticeRepository.cs" Line="15" Column="1" />
+      <File FileName="apiv2/Models/Apprentice.cs" Line="10" Column="1" />
+      <File FileName="apiv2/Models/Department.cs" Line="1" Column="1" />
+      <File FileName="apiv2/DTOs/ApprenticeDTO/ApprenticeResponseDTO.cs" Line="21" Column="1" />
+      <File FileName="apiv2/DTOs/ApprenticeDTO/ApprenticeRequestDTO.cs" Line="4" Column="18" />
+      <File FileName="apiv2/Data/ProjectContext.cs" Line="11" Column="1" />
+      <File FileName="apiv2/Utilities/JWTMiddleware.cs" Line="22" Column="1" />
+      <File FileName="apiv2/Program.cs" Line="16" Column="1" />
+      <File FileName="apiv2/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="apiv2/Migrations/20220117203001_initial.Designer.cs" Line="44" Column="31" />
+      <File FileName="apiv2/Migrations/20220117203001_initial.cs" Line="11" Column="23" />
+      <File FileName="apiv2/Utilities/Attributes/Authorization.cs" Line="40" Column="59" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="apiv2" expanded="True">
+            <Node name="apiv2" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="DTOs" expanded="True">
+                <Node name="ApprenticeDTO" expanded="True" />
+              </Node>
+              <Node name="Migrations" expanded="True">
+                <Node name="20220117203001_initial.cs" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="ApprenticeRepository" expanded="True" />
+              </Node>
+              <Node name="Services" expanded="True">
+                <Node name="ApprenticeService" expanded="True" />
+              </Node>
+              <Node name="UOF" expanded="True" />
+              <Node name="Utilities" expanded="True">
+                <Node name="Attributes" expanded="True">
+                  <Node name="Authorization.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.apiv2 PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/daniraducu/Documents/DAW/apiv2/apiv2/Utilities/Attributes/Authorization.cs" relfile="apiv2/Utilities/Attributes/Authorization.cs" line="37" column="1" />
+      <Breakpoint file="/Users/daniraducu/Documents/DAW/apiv2/apiv2/Utilities/JWTMiddleware.cs" relfile="apiv2/Utilities/JWTMiddleware.cs" line="21" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
