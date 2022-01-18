@@ -62,5 +62,16 @@ namespace apiv2.Services.ApprenticeService
             _apprenticeRepository.Save();
         }
 
+        public void Delete(Apprentice apprentice)
+        {
+            _apprenticeRepository.Remove(apprentice);
+            _apprenticeRepository.Save();
+        }
+
+        public void Update(Apprentice apprentice)
+        {
+            _apprenticeRepository.Update(apprentice);
+            _apprenticeRepository.Save();
+        }
     }
 }

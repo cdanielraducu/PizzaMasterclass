@@ -26,6 +26,8 @@
     <None Remove="BCrypt.Net-Core" />
     <None Remove="Utilities\Attributes\" />
     <None Remove="Microsoft.AspNetCore.Mvc.Core" />
+    <None Remove="Models\AssociativeTables\" />
+    <None Remove="Services\DepartmentService\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
@@ -54,5 +56,7 @@
     <Folder Include="Utilities\" />
     <Folder Include="Utilities\JWTUtils\" />
     <Folder Include="Utilities\Attributes\" />
+    <Folder Include="Models\AssociativeTables\" />
+    <Folder Include="Services\DepartmentService\" />
   </ItemGroup>
 </Project>

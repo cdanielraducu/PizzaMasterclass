@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l0D4wqAOUpf4QuQyTVin5Y9CBBmZoHs+T+kYNPOnCCUdjhAHyJUspNQ94bH5x99X1vybrqf9IawCx9dpNLXu0w==",
+  "dgSpecHash": "Ns7WqN74biEqKf/U9vz7lF1XqCUWw/dPkYoK8LGGfqO/osvyBOKT92tijqQs5h6enytR0iDjxpG7Micw2QSTXA==",
   "success": true,
-  "projectFilePath": "/Users/daniraducu/Documents/DAW/apiv2/apiv2/apiv2.csproj",
+  "projectFilePath": "/Users/daniraducu/Documents/Development/PizzaMasterclass/apiv2/apiv2/apiv2.csproj",
   "expectedPackageFiles": [
     "/Users/daniraducu/.nuget/packages/bcrypt.net-core/1.6.0/bcrypt.net-core.1.6.0.nupkg.sha512",
     "/Users/daniraducu/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

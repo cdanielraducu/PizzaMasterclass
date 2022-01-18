@@ -13,7 +13,9 @@ namespace apiv2.Services.ApprenticeService
         Apprentice GetById(Guid id);
         Apprentice GetByEmail(string email);
 
-        // Create
+        // Create - Delete - Update
         void Create(Apprentice apprentice);
+        void Delete(Apprentice apprentice);
+        void Update(Apprentice apprentice);
     }
 }

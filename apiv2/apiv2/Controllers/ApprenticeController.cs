@@ -11,8 +11,6 @@ using BCryptNet = BCrypt.Net.BCrypt;
 namespace apiv2.Controllers
 {
 
-    
-
     [Route("apiv2/[controller]")]
     [ApiController]
     public class ApprenticeController: ControllerBase
